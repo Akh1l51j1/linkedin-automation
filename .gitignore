@@ -6,6 +6,7 @@ env/
 # Environment Variables / Secrets
 .env
 .env.*
+custom_prompt.txt
 
 # Database files
 *.db

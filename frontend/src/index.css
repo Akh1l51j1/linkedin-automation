@@ -1,0 +1,78 @@
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/600.css';
+@import '@fontsource/space-grotesk/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+  body {
+    background-color: #0B0E14;
+    background-image:
+      radial-gradient(1200px 600px at 90% -10%, rgba(94, 234, 212, 0.05), transparent),
+      radial-gradient(900px 500px at -10% 20%, rgba(245, 185, 66, 0.04), transparent);
+    background-attachment: fixed;
+  }
+  ::selection {
+    background: rgba(245, 185, 66, 0.25);
+  }
+  :focus-visible {
+    outline: 2px solid #F5B942;
+    outline-offset: 2px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #242938;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2E3448;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-bg-surface border border-line rounded-xl2 shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium
+      transition-colors duration-150 disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-bg hover:bg-accent/90;
+  }
+  .btn-secondary {
+    @apply btn bg-bg-raised text-ink border border-line hover:bg-line;
+  }
+  .btn-ghost {
+    @apply btn text-ink-muted hover:text-ink hover:bg-bg-raised;
+  }
+  .btn-danger {
+    @apply btn bg-status-failed/10 text-status-failed border border-status-failed/30 hover:bg-status-failed/20;
+  }
+  .input {
+    @apply w-full rounded-lg bg-bg-raised border border-line px-3 py-2 text-sm text-ink
+      placeholder:text-ink-faint focus:border-accent/60 transition-colors;
+  }
+  .label {
+    @apply text-xs font-medium text-ink-muted uppercase tracking-wide;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+}

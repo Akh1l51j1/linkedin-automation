@@ -3,3 +3,6 @@ feedparser
 requests
 apscheduler
 python-dotenv
+fastapi
+uvicorn[standard]
+pydantic

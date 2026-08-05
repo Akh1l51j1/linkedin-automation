@@ -1,0 +1,23 @@
+{
+  "arxiv_categories": [
+    "cs.LG",
+    "cs.CL",
+    "cs.AI",
+    "cs.CV",
+    "cs.RO",
+    "cs.HC",
+    "cs.NE"
+  ],
+  "rss_feeds": [
+    "https://huggingface.co/blog/feed.xml",
+    "https://blog.google/technology/ai/rss/",
+    "https://openai.com/news/rss.xml",
+    "https://www.anthropic.com/rss.xml",
+    "https://blog.paperspace.com/rss/",
+    "https://lilianweng.github.io/index.xml",
+    "https://simonwillison.net/atom/entries/",
+    "https://www.quantamagazine.org/computer-science/feed/",
+    "https://news.ycombinator.com/rss",
+    "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=week"
+  ]
+}
